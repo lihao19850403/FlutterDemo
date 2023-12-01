@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'chapters_list.dart';
-import 'dart:developer' as developer;
 
 void main() => runApp(const MyApp());
 

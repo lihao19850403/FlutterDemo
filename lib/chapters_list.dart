@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//
+// 第一章。
 import 'base_views/main.dart' as file_main;
 import 'base_views/base_container.dart' as file_container;
 import 'base_views/base_text.dart' as file_text;
@@ -11,9 +11,12 @@ import 'base_views/base_horizontal_listview.dart' as file_horizontal_listview;
 import 'base_views/base_listview_builder.dart' as file_listview_builder;
 import 'base_views/base_gridview.dart' as file_gridview;
 import 'base_views/base_Form.dart' as file_form;
-//
+// 第二章。
 import 'base_design/scaffold_demo.dart' as design_scaffold;
 import 'base_design/tabbar_demo.dart' as design_tabbar;
+import 'base_design/drawer_demo.dart' as design_drawer;
+import 'base_design/btns_and_diags_demo.dart' as design_btn_diags;
+import 'base_design/textfield_demo.dart' as design_textfield;
 
 // 章节数据。
 class Chapter {
@@ -39,6 +42,7 @@ class SubChapter {
 
 // 章节列表。
 List<Chapter> chapters = <Chapter>[
+  // 第一章。
   Chapter("常用组件", <SubChapter>[
     const SubChapter('/main', 'main页面', file_main.MyApp()),
     const SubChapter('/container', '基本容器页面', file_container.MyApp()),
@@ -56,8 +60,12 @@ List<Chapter> chapters = <Chapter>[
     const SubChapter('/gridview', '网格列表控件页面', file_gridview.MyApp()),
     const SubChapter('/form', '表单示例页面', file_form.MyApp()),
   ]),
+  // 第二章。
   const Chapter("Material", <SubChapter>[
     SubChapter('/design_scaffold', '脚手架示例页面', design_scaffold.MyApp()),
     SubChapter('/design_tabbar', '标签页示例页面', design_tabbar.TabBarSample()),
+    SubChapter('/design_drawer', '抽屉示例页面', design_drawer.MyApp()),
+    SubChapter('/design_btn_diags', '按钮与对话框页面', design_btn_diags.MyApp()),
+    SubChapter('/design_textfield', '文本输入框示例页面', design_textfield.MyApp()),
   ])
 ];
