@@ -17,6 +17,12 @@ import 'base_design/tabbar_demo.dart' as design_tabbar;
 import 'base_design/drawer_demo.dart' as design_drawer;
 import 'base_design/btns_and_diags_demo.dart' as design_btn_diags;
 import 'base_design/textfield_demo.dart' as design_textfield;
+import 'base_design/card_demo.dart' as design_card;
+// 第三章。
+import 'cupertino_design/cupertino_loading.dart' as cupertino_loading;
+import 'cupertino_design/cupertino_btn_alertdiag.dart'
+    as cupertino_btn_alertdiag;
+import 'cupertino_design/navigation/cupertino_navigation.dart' as cupertino_navigation;
 
 // 章节数据。
 class Chapter {
@@ -67,5 +73,15 @@ List<Chapter> chapters = <Chapter>[
     SubChapter('/design_drawer', '抽屉示例页面', design_drawer.MyApp()),
     SubChapter('/design_btn_diags', '按钮与对话框页面', design_btn_diags.MyApp()),
     SubChapter('/design_textfield', '文本输入框示例页面', design_textfield.MyApp()),
-  ])
+    SubChapter('/design_card', '卡片示例页面', design_card.MyApp()),
+  ]),
+  // 第三章。
+  const Chapter("Cupertino", <SubChapter>[
+    SubChapter(
+        '/cupertino_loading', 'Cupertino风格加载框示例页面', cupertino_loading.MyApp()),
+    SubChapter('/cupertino_btn_alertdiag', 'Cupertino风格按钮与告警框',
+        cupertino_btn_alertdiag.MyApp()),
+    SubChapter(
+        '/cupertino_navigation', 'Cupertino导航页面', cupertino_navigation.MyApp()),
+  ]),
 ];
