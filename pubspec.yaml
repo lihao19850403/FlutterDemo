@@ -65,6 +65,16 @@ flutter:
   assets:
     - assets/images/head_icon_square.jpg
     - assets/images/qr_demo.jpeg
+    - assets/images/container1.jpg
+    - assets/images/container2.jpg
+    - assets/images/container3.jpeg
+    - assets/images/container4.jpg
+    - assets/images/align1.jpg
+    - assets/images/align2.jpg
+    - assets/images/align3.jpg
+    - assets/images/align4.jpeg
+    - assets/images/align5.png
+    - assets/images/banner1.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

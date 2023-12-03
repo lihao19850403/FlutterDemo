@@ -1,0 +1,41 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(const MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) => MaterialApp(
+        title: "stack层叠布局",
+        home: Scaffold(
+          appBar: AppBar(
+            centerTitle: true,
+            title: const Text("Stack层叠布局"),
+          ),
+          body: Builder(
+            builder: (context) => Center(
+                child: Stack(
+              alignment: Alignment.topLeft,
+              children: <Widget>[
+                const CircleAvatar(
+                  backgroundImage:
+                      AssetImage("assets/images/head_icon_square.jpg"),
+                  radius: 100,
+                ),
+                Container(
+                  decoration: const BoxDecoration(color: Colors.black38),
+                  child: const Text(
+                    "Flutter",
+                    style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
+                )
+              ],
+            )),
+          ),
+        ),
+      );
+}
