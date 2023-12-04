@@ -63,6 +63,20 @@ import 'package:flutter_demo_2023/base_layout/base_limittedbox.dart'
     as base_limittedbox;
 import 'package:flutter_demo_2023/base_layout/base_aspectradio.dart'
     as base_aspectradio;
+import 'package:flutter_demo_2023/base_layout/base_fractionallysizedbox.dart'
+    as base_fractionallysizedbox;
+import 'package:flutter_demo_2023/base_layout/base_gridview.dart'
+    as base_gridview;
+import 'package:flutter_demo_2023/base_layout/base_table.dart' as base_table;
+import 'package:flutter_demo_2023/base_layout/base_transform.dart'
+    as base_transform;
+import 'package:flutter_demo_2023/base_layout/base_baseline.dart'
+    as base_baseline;
+import 'package:flutter_demo_2023/base_layout/base_offstage.dart'
+    as base_offstage;
+import 'package:flutter_demo_2023/base_layout/base_wrap.dart' as base_wrap;
+import 'package:flutter_demo_2023/base_layout/base_fulldemo.dart'
+    as base_fulldemo;
 
 // 章节数据。
 class Chapter {
@@ -147,6 +161,15 @@ List<Chapter> chapters = <Chapter>[
     SubChapter("/layout_limittedbox", "LimittedBox容器（限定最大尺寸范围）",
         base_limittedbox.MyApp()),
     SubChapter(
-        "/layout_aspectradio", "AspectRadio限定宽高比", base_limittedbox.MyApp()),
+        "/layout_aspectradio", "AspectRadio限定宽高比", base_aspectradio.MyApp()),
+    SubChapter("/layout_fractionallysizedbox", "FractionallySizedBox百分比布局",
+        base_fractionallysizedbox.MyApp()),
+    SubChapter("/layout_gridview", "GridView网格布局", base_gridview.MyApp()),
+    SubChapter("/layout_table", "Table表格布局", base_table.MyApp()),
+    SubChapter("/layout_transform", "Transform矩阵变换", base_transform.MyApp()),
+    SubChapter("/layout_baseline", "Baseline基准线布局", base_baseline.MyApp()),
+    SubChapter("/layout_offstage", "Offstage控件显隐", base_offstage.MyApp()),
+    SubChapter("/layout_wrap", "Wrap自动折行", base_wrap.MyApp()),
+    SubChapter("/layout_fulldemo", "综合案例", base_fulldemo.MyApp()),
   ]),
 ];
