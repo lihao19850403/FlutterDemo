@@ -71,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
         centerTitle: true,
         backgroundColor: Theme.of(context).colorScheme.primary,
         title: const Text(
-          "MaterialApp示例",
+          "Flutter基础示例",
           style: TextStyle(color: Colors.white),
         ),
         bottom: TabBar(

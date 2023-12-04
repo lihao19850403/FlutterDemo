@@ -75,6 +75,7 @@ flutter:
     - assets/images/align4.jpeg
     - assets/images/align5.png
     - assets/images/banner1.jpeg
+    - assets/values/AndroidManifest.xml
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -101,3 +102,8 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+  fonts:
+    - family: huakang
+      fonts:
+        - asset: assets/fonts/huakang_regular_w5.ttf

@@ -29,14 +29,13 @@ import 'package:flutter_demo_2023/base_design/btns_and_diags_demo.dart'
 import 'package:flutter_demo_2023/base_design/textfield_demo.dart'
     as design_textfield;
 import 'package:flutter_demo_2023/base_design/card_demo.dart' as design_card;
-// 第三章。
 import 'package:flutter_demo_2023/cupertino_design/cupertino_loading.dart'
     as cupertino_loading;
 import 'package:flutter_demo_2023/cupertino_design/cupertino_btn_alertdiag.dart'
     as cupertino_btn_alertdiag;
 import 'package:flutter_demo_2023/cupertino_design/navigation/cupertino_navigation.dart'
     as cupertino_navigation;
-// 第四章。
+// 第三章。
 import 'package:flutter_demo_2023/base_layout/base_container.dart'
     as base_container;
 import 'package:flutter_demo_2023/base_layout/base_center.dart' as base_center;
@@ -77,6 +76,35 @@ import 'package:flutter_demo_2023/base_layout/base_offstage.dart'
 import 'package:flutter_demo_2023/base_layout/base_wrap.dart' as base_wrap;
 import 'package:flutter_demo_2023/base_layout/base_fulldemo.dart'
     as base_fulldemo;
+// 第四章。
+import 'package:flutter_demo_2023/base_gesture/base_gesture.dart'
+    as gesture_base;
+import 'package:flutter_demo_2023/base_gesture/removeable_list.dart'
+    as gesture_removeablelist;
+import 'package:flutter_demo_2023/base_gesture/load_file.dart'
+    as gesture_loadfile;
+import 'package:flutter_demo_2023/base_gesture/custom_ttf.dart'
+    as gesture_custom_ttf;
+// 第五章。
+import 'package:flutter_demo_2023/base_route/normal_jump/first_page.dart'
+    as jump_normal;
+import 'package:flutter_demo_2023/base_route/data_jump/first_page.dart'
+    as jump_data;
+// 第六章。
+import 'package:flutter_demo_2023/custom_view/custom_opacity.dart'
+    as custom_opacity;
+import 'package:flutter_demo_2023/custom_view/custom_border_shade.dart'
+    as custom_border_shade;
+import 'package:flutter_demo_2023/custom_view/custom_gradient.dart'
+    as custom_gradient;
+import 'package:flutter_demo_2023/custom_view/custom_rotated90box.dart'
+    as custom_rotated90box;
+import 'package:flutter_demo_2023/custom_view/custom_round_clip.dart'
+    as custom_round_clip;
+import 'package:flutter_demo_2023/custom_view/custom_rect_clip.dart'
+    as custom_rect_clip;
+import 'package:flutter_demo_2023/custom_view/custom_path_clip.dart'
+    as custom_path_clip;
 
 // 章节数据。
 class Chapter {
@@ -121,27 +149,21 @@ List<Chapter> chapters = <Chapter>[
     const SubChapter('/form', '表单示例页面', file_form.MyApp()),
   ]),
   // 第二章。
-  const Chapter("Material", <SubChapter>[
+  const Chapter("框架元素", <SubChapter>[
     SubChapter('/design_scaffold', '脚手架示例页面', design_scaffold.MyApp()),
     SubChapter('/design_tabbar', '标签页示例页面', design_tabbar.TabBarSample()),
     SubChapter('/design_drawer', '抽屉示例页面', design_drawer.MyApp()),
     SubChapter('/design_btn_diags', '按钮与对话框页面', design_btn_diags.MyApp()),
     SubChapter('/design_textfield', '文本输入框示例页面', design_textfield.MyApp()),
     SubChapter('/design_card', '卡片示例页面', design_card.MyApp()),
+    SubChapter(
+        '/cupertino_loading', 'Cupertino风格加载框示例页面', cupertino_loading.MyApp()),
+    SubChapter('/cupertino_btn_alertdiag', 'Cupertino风格按钮与告警框',
+        cupertino_btn_alertdiag.MyApp()),
+    SubChapter(
+        '/cupertino_navigation', 'Cupertino导航页面', cupertino_navigation.MyApp()),
   ]),
   // 第三章。
-  const Chapter(
-    "Cupertino",
-    <SubChapter>[
-      SubChapter('/cupertino_loading', 'Cupertino风格加载框示例页面',
-          cupertino_loading.MyApp()),
-      SubChapter('/cupertino_btn_alertdiag', 'Cupertino风格按钮与告警框',
-          cupertino_btn_alertdiag.MyApp()),
-      SubChapter('/cupertino_navigation', 'Cupertino导航页面',
-          cupertino_navigation.MyApp()),
-    ],
-  ),
-  // 第四章。
   const Chapter("页面布局", <SubChapter>[
     SubChapter("/layout_container", "Container", base_container.MyApp()),
     SubChapter("/layout_center", "Center居中布局", base_center.MyApp()),
@@ -171,5 +193,29 @@ List<Chapter> chapters = <Chapter>[
     SubChapter("/layout_offstage", "Offstage控件显隐", base_offstage.MyApp()),
     SubChapter("/layout_wrap", "Wrap自动折行", base_wrap.MyApp()),
     SubChapter("/layout_fulldemo", "综合案例", base_fulldemo.MyApp()),
+  ]),
+  // 第四章。
+  const Chapter("手势/资源", <SubChapter>[
+    SubChapter("/gesture_base", "基本手势", gesture_base.MyApp()),
+    SubChapter(
+        "/gesture_removeable_list", "可滑动删除的列表", gesture_removeablelist.MyApp()),
+    SubChapter("/gesture_loadfile", "异步加载文件", gesture_loadfile.MyApp()),
+    SubChapter("/gesture_custom_ttf", "加载字体", gesture_custom_ttf.MyApp()),
+  ]),
+  // 第五章。
+  Chapter("跳转/路由", <SubChapter>[
+    const SubChapter("/jump_normal", "普通页面跳转", jump_normal.FirstPage()),
+    SubChapter("/jump_data", "页面跳转，收发数据", jump_data.FirstPage()),
+  ]),
+  // 第六章。
+  const Chapter("自绘/动效", <SubChapter>[
+    SubChapter("/custom_opacity", "透明度处理", custom_opacity.MyApp()),
+    SubChapter("/custom_border_shade", "圆角边框+阴影", custom_border_shade.MyApp()),
+    SubChapter("/custom_gradient", "线性渐变与圆形渐变", custom_gradient.MyApp()),
+    SubChapter(
+        "/custom_rotated90box", "旋转盒子，每次右旋90度", custom_rotated90box.MyApp()),
+    SubChapter("/custom_round_clip", "圆和圆角矩形裁剪", custom_round_clip.MyApp()),
+    SubChapter("/custom_rect_clip", "自定义矩形裁剪", custom_rect_clip.MyApp()),
+    SubChapter("/custom_path_clip", "自定义路径裁剪", custom_path_clip.MyApp()),
   ]),
 ];

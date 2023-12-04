@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
               )
             ],
           ),
-          body: MyHomePage(),
+          body: const MyHomePage(),
           // bottomNavigationBar: BottomAppBar(
           //   child: Container(
           //     height: 50,

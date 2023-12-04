@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
               centerTitle: true,
               title: const Text("AspectRadio宽高比"),
             ),
-            body: Container(
+            body: SizedBox(
               height: 200,
               child: AspectRatio(
                 aspectRatio: 1.5,

@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         home: Scaffold(
           appBar: AppBar(
             centerTitle: true,
-            title: Text("网格视图"),
+            title: const Text("网格视图"),
           ),
           body: GridView.count(
             crossAxisCount: 3,

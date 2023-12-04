@@ -70,8 +70,8 @@ class MyApp extends StatelessWidget {
                               decoration: BoxDecoration(
                                   border: Border.all(
                                       width: 10, color: Colors.blueGrey),
-                                  borderRadius: BorderRadius.all(
-                                      const Radius.circular(8))),
+                                  borderRadius: const BorderRadius.all(
+                                      Radius.circular(8))),
                               margin: const EdgeInsets.all(4),
                               child:
                                   Image.asset("assets/images/container4.jpg"),
