@@ -90,6 +90,8 @@ import 'package:flutter_demo_2023/base_route/normal_jump/first_page.dart'
     as jump_normal;
 import 'package:flutter_demo_2023/base_route/data_jump/first_page.dart'
     as jump_data;
+import 'package:flutter_demo_2023/base_route/call_native/call_native.dart'
+    as jump_call_native;
 // 第六章。
 import 'package:flutter_demo_2023/custom_view/custom_opacity.dart'
     as custom_opacity;
@@ -226,6 +228,7 @@ List<Chapter> chapters = <Chapter>[
   Chapter("跳转/路由", <SubChapter>[
     const SubChapter("/jump_normal", "普通页面跳转", jump_normal.FirstPage()),
     SubChapter("/jump_data", "页面跳转，收发数据", jump_data.FirstPage()),
+    const SubChapter("/jump_call_native", "调用原生方法", jump_call_native.MyApp()),
   ]),
   // 第六章。
   const Chapter("自绘/动效", <SubChapter>[
