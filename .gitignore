@@ -5,3 +5,4 @@ android/.idea
 .dart_tool
 build
 ios
+.idea
