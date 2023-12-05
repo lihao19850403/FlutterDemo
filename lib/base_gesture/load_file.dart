@@ -33,29 +33,33 @@ class _MyState extends State<_MyStatePage> {
         title: "加载文件",
         home: Builder(
             builder: (context) => Scaffold(
-                appBar: AppBar(
-                  centerTitle: true,
-                  title: const Text("异步加载文件"),
-                ),
-                body: Center(
-                  child: Column(children: <Widget>[
-                    Text(content ?? "暂无内容"),
-                    ElevatedButton(
-                        onPressed: () {
-                          developer.log("开始加载");
-                          content = "加载中...";
-                          loadFile().then((value) {
-                            developer.log("拿到了内容：$value");
-                            setState(() {
-                              content = value;
-                            });
-                          }).onError((error, stackTrace) {
-                            developer.log("发生了异常：${stackTrace.toString()}");
-                            return null;
+                  appBar: AppBar(
+                    centerTitle: true,
+                    title: const Text("异步加载文件"),
+                  ),
+                  body: ListView(
+                    children: <Widget>[
+                      Center(
+                        child: Text(content ?? "暂无内容"),
+                      )
+                    ],
+                  ),
+                  floatingActionButton: FloatingActionButton(
+                      tooltip: "异步加载文件",
+                      child: const Icon(Icons.add),
+                      onPressed: () {
+                        developer.log("开始加载");
+                        content = "加载中...";
+                        loadFile().then((value) {
+                          developer.log("拿到了内容：$value");
+                          setState(() {
+                            content = value;
                           });
-                        },
-                        child: const Text("加载文件"))
-                  ]),
-                ))),
+                        }).onError((error, stackTrace) {
+                          developer.log("发生了异常：${stackTrace.toString()}");
+                          return null;
+                        });
+                      }),
+                )),
       );
 }
