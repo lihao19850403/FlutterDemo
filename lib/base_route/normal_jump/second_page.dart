@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class SecondPage extends StatelessWidget {
   // 从上一个页面继承来的context。
-  BuildContext? extendedContext;
+  final BuildContext? extendedContext;
 
-  SecondPage({super.key, this.extendedContext});
+  const SecondPage({super.key, this.extendedContext});
 
   @override
   Widget build(BuildContext context) => MaterialApp(

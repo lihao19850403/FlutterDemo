@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
           child: Center(
             child: Text(
               "主页内容",
-              style: Theme.of(context).textTheme.button,
+              style: Theme.of(context).textTheme.labelLarge,
             ),
           )));
 }

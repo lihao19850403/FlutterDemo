@@ -5,7 +5,7 @@ import 'package:flutter_demo_2023/base_route/data_jump/second_page.dart';
 class FirstPage extends StatelessWidget {
   FirstPage({super.key});
 
-  List<Product> products = List<Product>.generate(
+  final List<Product> _products = List<Product>.generate(
       30, (index) => Product("产品，序号　$index", "这是第$index号产品。"));
 
   @override
@@ -18,16 +18,16 @@ class FirstPage extends StatelessWidget {
                     title: const Text("第一页"),
                   ),
                   body: ListView.builder(
-                      itemCount: products.length,
+                      itemCount: _products.length,
                       itemBuilder: (context, index) => ListTile(
-                            title: Text(products[index].title!),
+                            title: Text(_products[index].title!),
                             leading: const Icon(Icons.tv),
                             onTap: () {
                               Navigator.of(context)
                                   .push(MaterialPageRoute(
                                       builder: (context) => SecondPage(
                                             extendedContext: context,
-                                            extendedProduct: products[index],
+                                            extendedProduct: _products[index],
                                           )))
                                   .then((value) {
                                 Product item = value as Product;

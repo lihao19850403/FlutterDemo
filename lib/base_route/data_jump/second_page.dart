@@ -3,12 +3,12 @@ import 'package:flutter_demo_2023/base_route/data_jump/product.dart';
 
 class SecondPage extends StatelessWidget {
   // 从上一个页面继承来的context。
-  BuildContext? extendedContext;
+  final BuildContext? extendedContext;
 
   // 从上一个页面继承来的产品信息。
-  Product? extendedProduct;
+  final Product? extendedProduct;
 
-  SecondPage({super.key, this.extendedContext, this.extendedProduct});
+  const SecondPage({super.key, this.extendedContext, this.extendedProduct});
 
   @override
   Widget build(BuildContext context) => MaterialApp(

@@ -98,9 +98,9 @@ class _MyHomePageState extends State<MyHomePage> {
             children: <Widget>[
               ElevatedButton(
                   style: const ButtonStyle(),
-                  onPressed: () {
-                    const url = 'https://www.baidu.com';
-                    launch(url);
+                  onPressed: () async {
+                    final url = Uri.parse('https://www.baidu.com');
+                    await launchUrl(url, mode: LaunchMode.externalApplication);
                   },
                   child: const Text('跳转百度')),
               ElevatedButton(

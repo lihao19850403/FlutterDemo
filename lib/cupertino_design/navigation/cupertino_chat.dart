@@ -15,7 +15,7 @@ class ChatPage extends StatelessWidget {
           child: Center(
             child: Text(
               "聊天窗口",
-              style: Theme.of(context).textTheme.button,
+              style: Theme.of(context).textTheme.labelLarge,
             ),
           )));
 }

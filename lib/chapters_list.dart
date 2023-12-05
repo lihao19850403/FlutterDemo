@@ -105,6 +105,26 @@ import 'package:flutter_demo_2023/custom_view/custom_rect_clip.dart'
     as custom_rect_clip;
 import 'package:flutter_demo_2023/custom_view/custom_path_clip.dart'
     as custom_path_clip;
+import 'package:flutter_demo_2023/custom_view/custom_draw_line.dart'
+    as custom_draw_line;
+import 'package:flutter_demo_2023/custom_view/custom_draw_circle.dart'
+    as custom_draw_circle;
+import 'package:flutter_demo_2023/custom_view/custom_draw_oval.dart'
+    as custom_draw_oval;
+import 'package:flutter_demo_2023/custom_view/custom_draw_round_rect.dart'
+    as custom_draw_round_rect;
+import 'package:flutter_demo_2023/custom_view/custom_draw_double_rect.dart'
+    as custom_draw_double_rect;
+import 'package:flutter_demo_2023/custom_view/custom_draw_point.dart'
+    as custom_draw_point;
+import 'package:flutter_demo_2023/custom_view/custom_draw_arc.dart'
+    as custom_draw_arc;
+import 'package:flutter_demo_2023/custom_view/custom_draw_path.dart'
+    as custom_draw_path;
+import 'package:flutter_demo_2023/custom_view/custom_anim_opacity.dart'
+    as custom_anim_opacity;
+import 'package:flutter_demo_2023/custom_view/hero/first_page.dart'
+    as custom_hero_jump;
 
 // 章节数据。
 class Chapter {
@@ -217,5 +237,18 @@ List<Chapter> chapters = <Chapter>[
     SubChapter("/custom_round_clip", "圆和圆角矩形裁剪", custom_round_clip.MyApp()),
     SubChapter("/custom_rect_clip", "自定义矩形裁剪", custom_rect_clip.MyApp()),
     SubChapter("/custom_path_clip", "自定义路径裁剪", custom_path_clip.MyApp()),
+    SubChapter("/custom_draw_line", "绘制直线", custom_draw_line.MyApp()),
+    SubChapter("/custom_draw_circle", "绘制圆", custom_draw_circle.MyApp()),
+    SubChapter("/custom_draw_oval", "绘制椭圆", custom_draw_oval.MyApp()),
+    SubChapter(
+        "/custom_draw_round_rect", "绘制圆角矩形", custom_draw_round_rect.MyApp()),
+    SubChapter(
+        "/custom_draw_double_rect", "绘制嵌套矩形", custom_draw_double_rect.MyApp()),
+    SubChapter("/custom_draw_point", "绘制点", custom_draw_point.MyApp()),
+    SubChapter("/custom_draw_arc", "绘制圆弧", custom_draw_arc.MyApp()),
+    SubChapter("/custom_draw_path", "绘制路径", custom_draw_path.MyApp()),
+    SubChapter("/custom_anim_opacity", "显隐动画举例", custom_anim_opacity.MyApp()),
+    SubChapter(
+        "/custom_hero_jump", "Hero页面跳转动画举例", custom_hero_jump.FirstPage()),
   ]),
 ];

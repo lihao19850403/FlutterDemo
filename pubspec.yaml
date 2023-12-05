@@ -75,6 +75,7 @@ flutter:
     - assets/images/align4.jpeg
     - assets/images/align5.png
     - assets/images/banner1.jpeg
+    - assets/images/banner2.jpg
     - assets/values/AndroidManifest.xml
 
   # An image asset can refer to one or more resolution-specific "variants", see
