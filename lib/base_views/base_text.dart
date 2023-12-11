@@ -48,6 +48,12 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   letterSpacing: 6),
             ),
+            Text.rich(TextSpan(children: <TextSpan>[
+              TextSpan(text: "Home："),
+              TextSpan(
+                  text: "https://flutterchina.club",
+                  style: TextStyle(color: Colors.blue))
+            ]))
           ],
         ),
       ),

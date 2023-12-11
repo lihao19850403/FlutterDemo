@@ -8,10 +8,16 @@ import 'package:flutter_demo_2023/base_views/base_image.dart' as file_image;
 import 'package:flutter_demo_2023/base_views/base_icon.dart' as file_icon;
 import 'package:flutter_demo_2023/base_views/base_icon_button.dart'
     as file_icon_button;
+import 'package:flutter_demo_2023/base_views/base_check_radio.dart'
+    as file_check_radio;
+import 'package:flutter_demo_2023/base_views/base_progress.dart'
+    as file_progress;
 import 'package:flutter_demo_2023/base_views/base_listview.dart'
     as file_listview;
 import 'package:flutter_demo_2023/base_views/base_horizontal_listview.dart'
     as file_horizontal_listview;
+import 'package:flutter_demo_2023/base_views/base_infinitelist.dart'
+    as file_infinitelist;
 import 'package:flutter_demo_2023/base_views/base_listview_builder.dart'
     as file_listview_builder;
 import 'package:flutter_demo_2023/base_views/base_gridview.dart'
@@ -160,8 +166,12 @@ List<Chapter> chapters = <Chapter>[
     const SubChapter('/image', '图像控件页面', file_image.MyApp()),
     const SubChapter('/icon', '图标控件页面', file_icon.MyApp()),
     const SubChapter('/icon_button', '图标按钮控件页面', file_icon_button.MyApp()),
+    const SubChapter('/check_radio', '单选钮和复选框', file_check_radio.MyApp()),
+    const SubChapter('/progress', '进度条页面', file_progress.MyApp()),
     const SubChapter('/listview', '纵向列表页面', file_listview.MyApp()),
     const SubChapter('/h_listview', '横向列表页面', file_horizontal_listview.MyApp()),
+    const SubChapter(
+        '/infinite_listview', '无限内容列表页面', file_infinitelist.MyApp()),
     SubChapter(
         '/listview_builder',
         '列表内容构造器示例页面',
