@@ -5,3 +5,6 @@ android/.idea
 .dart_tool
 build
 .idea
+.vscode
+pubspec.lock
+Podfile.lock
