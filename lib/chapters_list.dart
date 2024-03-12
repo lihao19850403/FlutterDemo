@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 // 第一章。
 import 'package:flutter_demo_2023/base_views/main.dart' as file_main;
+import 'package:flutter_demo_2023/base_views/base_counter.dart'
+    as file_first_counter;
 import 'package:flutter_demo_2023/base_views/base_container.dart'
     as file_container;
 import 'package:flutter_demo_2023/base_views/base_text.dart' as file_text;
@@ -161,6 +163,7 @@ List<Chapter> chapters = <Chapter>[
   // 第一章。
   Chapter("常用组件", <SubChapter>[
     const SubChapter('/main', 'main页面', file_main.MyApp()),
+    const SubChapter('/first_counter', '第一个计数器', file_first_counter.MyApp()),
     const SubChapter('/container', '基本容器页面', file_container.MyApp()),
     const SubChapter('/text', '文本控件页面', file_text.MyApp()),
     const SubChapter('/image', '图像控件页面', file_image.MyApp()),
