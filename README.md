@@ -1,16 +1,5 @@
-# flutter_demo_2023
+# FlutterDemo
 
-A new Flutter project.
+这个项目对Flutter跨端开发进行了研究。
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+项目中通过MethodChannel实现与各原生平台的交互。
