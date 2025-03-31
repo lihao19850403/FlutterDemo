@@ -8,3 +8,4 @@ build
 .vscode
 pubspec.lock
 Podfile.lock
+android/app/.cxx

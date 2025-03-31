@@ -1,7 +1,33 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_demo_2023/ErrorHandler.dart';
 import 'chapters_list.dart';
 
-void main() => runApp(const MyApp());
+void main() {
+  var originalOnError = FlutterError.onError;
+  FlutterError.onError = (FlutterErrorDetails details) {
+    originalOnError?.call(details);
+    reportErrorAndLog(details);
+  };
+  runZoned(
+    () => runApp(const MyApp()),
+    zoneSpecification: ZoneSpecification(
+      // 拦截print：
+      print: (Zone self, ZoneDelegate parent, Zone zone, String line) {
+        collectLog(line);
+      },
+      // UncaughtExceptionHandler：
+      handleUncaughtError: (Zone self, ZoneDelegate parent, Zone zone, Object error, StackTrace stackTrace) {
+        var errorDetails = FlutterErrorDetails(exception: error).copyWith(
+          stack: stackTrace
+        );
+        reportErrorAndLog(errorDetails);
+        parent.print(zone, '${error.toString()} $stackTrace');
+      }
+    )
+  );
+}
 
 // 选中章节后展示的视图。
 class ChapterContentView extends StatelessWidget {
