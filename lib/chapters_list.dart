@@ -84,6 +84,7 @@ import 'package:flutter_demo_2023/base_layout/base_offstage.dart'
 import 'package:flutter_demo_2023/base_layout/base_wrap.dart' as base_wrap;
 import 'package:flutter_demo_2023/base_layout/base_fulldemo.dart'
     as base_fulldemo;
+import 'package:flutter_demo_2023/base_layout/base_layoutbuilder.dart' as base_layoutbuilder;
 // 第四章。
 import 'package:flutter_demo_2023/base_gesture/base_gesture.dart'
     as gesture_base;
@@ -228,6 +229,7 @@ List<Chapter> chapters = <Chapter>[
     SubChapter("/layout_offstage", "Offstage控件显隐", base_offstage.MyApp()),
     SubChapter("/layout_wrap", "Wrap自动折行", base_wrap.MyApp()),
     SubChapter("/layout_fulldemo", "综合案例", base_fulldemo.MyApp()),
+    SubChapter("/layout_layoutbuilder", "响应式LayoutBuilder", base_layoutbuilder.LayoutBuilderRouter())
   ]),
   // 第四章。
   const Chapter("手势/资源", <SubChapter>[

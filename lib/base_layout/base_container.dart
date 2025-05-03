@@ -78,6 +78,32 @@ class MyApp extends StatelessWidget {
                             )),
                           ],
                         ),
+                        Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Center(
+                                  child: Container(
+                                margin: const EdgeInsets.only(top: 50),
+                                constraints: const BoxConstraints.tightFor(
+                                    width: 200, height: 150),
+                                decoration: const BoxDecoration(
+                                    gradient: RadialGradient(
+                                        colors: [Colors.red, Colors.orange],
+                                        center: Alignment.topLeft,
+                                        radius: .98),
+                                    boxShadow: [
+                                      BoxShadow(
+                                          color: Colors.black54,
+                                          offset: Offset(2.0, 2.0),
+                                          blurRadius: 4.0)
+                                    ]),
+                                transform: Matrix4.rotationZ(.2),
+                                alignment: Alignment.center,
+                                child: const Text("5.20",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 40)),
+                              ))
+                            ])
                       ],
                     ),
                   )),
