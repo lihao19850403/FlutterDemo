@@ -88,6 +88,7 @@ import 'package:flutter_demo_2023/base_layout/base_layoutbuilder.dart' as base_l
 import 'package:flutter_demo_2023/base_layout/base_pageview.dart' as base_pageview;
 import 'package:flutter_demo_2023/base_layout/base_customsliver.dart' as base_customsliver;
 import 'package:flutter_demo_2023/base_layout/base_persistentHeader.dart' as base_persistent;
+import 'package:flutter_demo_2023/base_layout/base_nestedscrollview.dart' as base_nestedscrollview;
 // 第四章。
 import 'package:flutter_demo_2023/base_gesture/base_gesture.dart'
     as gesture_base;
@@ -235,7 +236,8 @@ List<Chapter> chapters = <Chapter>[
     SubChapter("/layout_layoutbuilder", "响应式LayoutBuilder", base_layoutbuilder.LayoutBuilderRouter()),
     SubChapter("/layout_pageview", "PageView缓存子页", base_pageview.MyApp()),
     SubChapter("/layout_customsliver", "自定义Sliver滚动", base_customsliver.MyApp()),
-    SubChapter("/layout_persistent", "滑动吸顶Header", base_persistent.PersistentHeaderRoute())
+    SubChapter("/layout_persistent", "滑动吸顶Header", base_persistent.PersistentHeaderRoute()),
+    SubChapter("/layout_nestedscrollview", "NestedScrollView", base_nestedscrollview.MyApp())
   ]),
   // 第四章。
   const Chapter("手势/资源", <SubChapter>[
