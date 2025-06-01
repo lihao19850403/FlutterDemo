@@ -114,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: TabBarView(
           children: chapters
               .map((chapter) => Padding(
-                    padding: const EdgeInsets.fromLTRB(10, 0, 10, 10),
+                    padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                     child: ChapterContentView(
                       chapter: chapter,
                     ),
