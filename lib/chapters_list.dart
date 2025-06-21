@@ -142,6 +142,8 @@ import 'package:flutter_demo_2023/custom_view/custom_anim_opacity.dart'
     as custom_anim_opacity;
 import 'package:flutter_demo_2023/custom_view/hero/first_page.dart'
     as custom_hero_jump;
+import 'package:flutter_demo_2023/custom_view/custom_anim_switch.dart'
+    as custom_anim_switch;
 
 // 章节数据。
 class Chapter {
@@ -279,5 +281,6 @@ List<Chapter> chapters = <Chapter>[
     SubChapter("/custom_anim_opacity", "显隐动画举例", custom_anim_opacity.MyApp()),
     SubChapter(
         "/custom_hero_jump", "Hero页面跳转动画举例", custom_hero_jump.FirstPage()),
+    SubChapter("/custom_anim_switch", "元素切换动画", custom_anim_switch.AnimatedSwitcherCounterRoute()),
   ]),
 ];
