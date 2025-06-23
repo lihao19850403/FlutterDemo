@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_demo_2023/SlideTransitionX.dart';
+import 'package:flutter_demo_2023/utils/SlideTransitionX.dart';
 
 void main() => runApp(const AnimatedSwitcherCounterRoute());
 

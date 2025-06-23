@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_demo_2023/ErrorHandler.dart';
+import 'package:flutter_demo_2023/utils/ErrorHandler.dart';
 import 'chapters_list.dart';
 
 void main() {
