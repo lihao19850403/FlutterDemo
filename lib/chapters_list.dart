@@ -146,6 +146,8 @@ import 'package:flutter_demo_2023/custom_view/custom_anim_switch.dart'
     as custom_anim_switch;
 import 'package:flutter_demo_2023/custom_view/custom_view_gradient_btns.dart'
     as custom_view_gradient_btns;
+import 'package:flutter_demo_2023/custom_view/custom_view_indicators.dart'
+    as custom_view_indicators;
 
 // 章节数据。
 class Chapter {
@@ -285,5 +287,6 @@ List<Chapter> chapters = <Chapter>[
         "/custom_hero_jump", "Hero页面跳转动画举例", custom_hero_jump.FirstPage()),
     SubChapter("/custom_anim_switch", "元素切换动画", custom_anim_switch.AnimatedSwitcherCounterRoute()),
     SubChapter("/custom_view_gradient_btns", "自定义渐变色按钮", custom_view_gradient_btns.GradientButtonRoute()),
+    SubChapter("/custom_view_indicators", "自定义环形进度条", custom_view_indicators.GradientCircularProgressRoute()),
   ]),
 ];
