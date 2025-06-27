@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_2023/utils/CustomCheckBox.dart';
+import 'package:flutter_demo_2023/utils/CustomRadioButton.dart';
 
 void main() => runApp(const MyApp());
 
@@ -24,6 +25,7 @@ class _MyApp extends State<MyApp> {
                 body: Center(
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
+                        spacing: 4,
                         children: <Widget>[
                       Row(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -63,7 +65,30 @@ class _MyApp extends State<MyApp> {
                                     value: _checked,
                                     onChanged: _onChange)),
                             const Text("粗大复选框")
-                          ])
+                          ]),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        spacing: 4,
+                        children: [
+                          Padding(
+                              padding: const EdgeInsets.only(
+                                  left: 18, top: 18, bottom: 18),
+                              child: CustomRadioButton(
+                                  outline: true,
+                                  value: _checked,
+                                  onChanged: _onChange)),
+                          const Text("线框型单选钮")
+                        ],
+                      ),
+                          Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        spacing: 4,
+                        children: [
+                          CustomRadioButton(
+                              value: _checked, onChanged: _onChange),
+                          const Text("实心填充单选钮")
+                        ],
+                      )
                     ])))));
   }
 
