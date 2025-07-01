@@ -24,7 +24,7 @@ import 'package:flutter_demo_2023/base_views/base_listview_builder.dart'
     as file_listview_builder;
 import 'package:flutter_demo_2023/base_views/base_gridview.dart'
     as file_gridview;
-import 'package:flutter_demo_2023/base_views/base_Form.dart' as file_form;
+import 'package:flutter_demo_2023/base_views/base_form.dart' as file_form;
 // 第二章。
 import 'package:flutter_demo_2023/base_design/scaffold_demo.dart'
     as design_scaffold;
